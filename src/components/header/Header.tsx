@@ -1,5 +1,6 @@
 import { faker } from "@faker-js/faker";
 import { FC } from "react";
+import { Avatar } from "../avatar/Avatar";
 import "./Header.css";
 
 interface HeaderProps {
@@ -12,7 +13,7 @@ export const Header: FC<HeaderProps> = ({ imageSrc, userName }) => {
         <div className="header">
             <div className="header__data">
                 <button type="submit" className="getBack-button"></button>
-                <img src={imageSrc} alt="avatar" className="avatar" />
+                <Avatar imageSrc={imageSrc} />
                 <p className="header__name">{userName}</p>
             </div>
             <form

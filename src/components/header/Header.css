@@ -21,14 +21,6 @@
     font-weight: 600;
 }
 
-.avatar {
-    border-radius: 50%;
-    width: 70px;
-    height: 70px;
-    margin-left: 15px;
-    background-image: url(/public/assets/img/spare-user-img.jpg);
-}
-
 .header__form {
     margin: 0px 15px 15px 15px;
 }

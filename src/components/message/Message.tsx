@@ -1,9 +1,10 @@
 import { faker } from "@faker-js/faker";
 import { FC } from "react";
+import { Avatar } from "../avatar/Avatar";
 import "./Message.css";
 
 interface MessageProps {
-    imageSrc: string,
+    imageSrc: string
 }
 
 export const Message: FC<MessageProps> = ({ imageSrc }) => {
@@ -12,7 +13,7 @@ export const Message: FC<MessageProps> = ({ imageSrc }) => {
 
     return (
         <div className={id ? "message" : "message message-user"}>
-            {id ? <img src={imageSrc} alt="avatar" className="avatar" /> : null}
+            {id ? <Avatar imageSrc={imageSrc} /> : null}
             <div className="message__content">
                 <p className="message__text">{faker.lorem.lines()}</p>
                 <p className="message__date">4/22/17, 4:10 AM</p>
