@@ -24,11 +24,13 @@
     color: #000000;
     border: none;
     background-color: #f2fafa;
-    padding: 20px 70px;
+    padding: 20px 0px;
+    margin: 10px 0px;
     border-radius: 5px;
     font-size: 19px;
     cursor: pointer;
     transition: 0.2s linear;
+    width: 50%;
 }
 
 .login__btn:hover {
