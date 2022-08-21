@@ -1,0 +1,74 @@
+.messages {
+    width: 70%;
+    background-color: #ffffff;
+    border: 2px solid #c3c3c3;
+    overflow: hidden;
+}
+
+.messages__content {
+    height: calc(100vh - 206px);
+    overflow: auto;
+}
+
+.messages__content,
+.messages__list {
+    transform: rotateX(-180deg);
+}
+
+.messages__content::-webkit-scrollbar {
+    width: 10px;
+    background-color: transparent;
+    border-radius: 5px;
+}
+
+.messages__content::-webkit-scrollbar-thumb {
+    background: #c3c3c3;
+    border-radius: 5px;
+}
+
+.messages .header__form {
+    display: none;
+}
+
+.messages__input {
+    display: flex;
+    justify-content: center;
+    background-color: #dcdada;
+}
+
+.messages__form {
+    margin: 20px 15px;
+    width: 100%;
+}
+
+.messages__label {
+    position: relative;
+}
+
+.messages__input__field {
+    width: 100%;
+    border: 1px solid #a4a3a3;
+    outline: none;
+    border-radius: 15px;
+    padding: 15px 36px 15px 15px;
+    font-family: "Roboto", sans-serif;
+    resize: none
+}
+
+.send-button {
+    position: absolute;
+    top: -26px;
+    right: 17px;
+    width: 30px;
+    height: 30px;
+    border: none;
+    padding: 0px;
+    cursor: pointer;
+    background: transparent;
+}
+
+.send-button-icon {
+    fill: #8a8989;
+    width: 30px;
+    height: 30px;
+}

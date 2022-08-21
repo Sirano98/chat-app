@@ -1,0 +1,103 @@
+.chat {
+    width: 100%;
+    display: flex;
+}
+
+@media (max-width:1150px) {
+    .contacts {
+        width: 40%;
+    }
+}
+
+@media (max-width: 950px) {
+    .chat {
+        position: relative;
+    }
+
+    /* Contacts */
+    .contacts {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        z-index: 10;
+        width: 100%;
+        transform: translateX(-100%);
+    }
+
+    .contacts__title {
+        padding: 20px 0px 20px 10px;
+        font-size: 20px;
+    }
+
+    .contacts__list {
+        height: calc(100vh - 193px);
+    }
+
+    .contact__data {
+        margin-left: 10px;
+    }
+
+    /* Messages */
+
+    .messages {
+        width: 100%;
+    }
+
+    .messages__content {
+        height: calc(100vh - 171px);
+    }
+
+    /* Header */
+
+    .header__data {
+        margin: 10px 0px;
+    }
+
+    .avatar {
+        width: 50px;
+        height: 50px;
+    }
+
+    .search-button {
+        top: 77px;
+    }
+
+    .getBack-button {
+        display: block;
+    }
+}
+
+@media (max-width:600px) {
+    .message {
+        margin: 20px 0px;
+        flex-direction: column;
+    }
+
+    .message .avatar {
+        align-self: flex-start;
+        margin-bottom: 10px;
+    }
+
+    .message__text {
+        font-size: 15px;
+        line-height: 1.5;
+        padding: 20px;
+    }
+
+    .messages__form {
+        margin: 15px;
+    }
+
+    .messages__input__field {
+        padding: 10px 36px 10px 10px;
+    }
+
+    .send-button {
+        top: -21px;
+        right: 20px;
+    }
+
+    .messages__content {
+        height: calc(100vh - 151px);
+    }
+}

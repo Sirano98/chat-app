@@ -1,0 +1,32 @@
+.contacts {
+    width: 30%;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+.contacts .getBack-button {
+    display: none;
+}
+
+.contacts__title {
+    color: #0563fa;
+    background-color: #ffffff;
+    font-size: 25px;
+    padding: 30px 0px 30px 10px;
+}
+
+.contacts__list {
+    overflow-y: auto;
+    height: calc(100vh - 253px);
+}
+
+.contacts__list::-webkit-scrollbar {
+    width: 10px;
+    background-color: transparent;
+    border-radius: 5px;
+}
+
+.contacts__list::-webkit-scrollbar-thumb {
+    background: #c3c3c3;
+    border-radius: 5px;
+}

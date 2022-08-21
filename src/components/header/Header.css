@@ -1,0 +1,60 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    background-color: #dcdada;
+    border-bottom: 2px solid #c3c3c3;
+}
+
+.header__data {
+    display: flex;
+    align-items: center;
+    margin: 15px 0px 20px;
+}
+
+.getBack-button {
+    display: none;
+}
+
+.header__name {
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.avatar {
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    margin-left: 15px;
+    background-image: url(/public/assets/img/spare-user-img.jpg);
+}
+
+.header__form {
+    margin: 0px 15px 15px 15px;
+}
+
+.header__input {
+    width: 100%;
+    border: 1px solid #a4a3a3;
+    outline: none;
+    border-radius: 20px;
+    padding: 10px 7px 10px 30px;
+}
+
+.search-button {
+    background: transparent url(/public/assets/icons/search.svg) 50% no-repeat;
+    border: none;
+    height: 25px;
+    left: 20px;
+    top: 112px;
+    position: absolute;
+    width: 25px;
+}
+
+.getBack-button {
+    background: transparent url(/public/assets/icons/arrow-left.svg) 50% no-repeat;
+    border: none;
+    height: 40px;
+    width: 40px;
+    margin-left: 10px;
+}
