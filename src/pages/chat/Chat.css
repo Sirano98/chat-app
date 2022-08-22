@@ -58,12 +58,12 @@
         height: 50px;
     }
 
-    .search-button {
-        top: 77px;
-    }
-
     .getBack-button {
         display: block;
+    }
+
+    .logout-button {
+        margin-bottom: 15px;
     }
 }
 
@@ -90,11 +90,6 @@
 
     .messages__input__field {
         padding: 10px 36px 10px 10px;
-    }
-
-    .send-button {
-        top: -21px;
-        right: 20px;
     }
 
     .messages__content {

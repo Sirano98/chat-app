@@ -12,12 +12,12 @@
     color: #0563fa;
     background-color: #ffffff;
     font-size: 25px;
-    padding: 30px 0px 30px 10px;
+    padding: 20px 0px 20px 10px;
 }
 
 .contacts__list {
     overflow-y: auto;
-    height: calc(100vh - 253px);
+    height: calc(100vh - 282px);
 }
 
 .contacts__list::-webkit-scrollbar {

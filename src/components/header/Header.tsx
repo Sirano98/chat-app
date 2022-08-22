@@ -1,5 +1,6 @@
-import { faker } from "@faker-js/faker";
+import { signOut } from "firebase/auth";
 import { FC } from "react";
+import { auth } from "../../firebase";
 import { Avatar } from "../avatar/Avatar";
 import "./Header.css";
 
@@ -16,11 +17,12 @@ export const Header: FC<HeaderProps> = ({ imageSrc, userName }) => {
                 <Avatar imageSrc={imageSrc} />
                 <p className="header__name">{userName}</p>
             </div>
+            <button className="logout-button" onClick={() => signOut(auth)}>Log out</button>
             <form
                 className="header__form"
                 autoComplete="off">
 
-                <label className="contacts-label">
+                <label className="contacts__label">
                     <button type="submit" className="search-button"></button>
                     <input
                         type="search"

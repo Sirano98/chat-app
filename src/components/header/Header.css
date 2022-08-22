@@ -21,8 +21,22 @@
     font-weight: 600;
 }
 
+.logout-button {
+    display: block;
+    max-width: 150px;
+    height: 30px;
+    margin: 0px 15px 20px;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 5px;
+}
+
 .header__form {
     margin: 0px 15px 15px 15px;
+}
+
+.contacts__label {
+    position: relative;
 }
 
 .header__input {
@@ -37,8 +51,8 @@
     background: transparent url(/public/assets/icons/search.svg) 50% no-repeat;
     border: none;
     height: 25px;
-    left: 20px;
-    top: 112px;
+    left: 7px;
+    top: -3px;
     position: absolute;
     width: 25px;
 }
