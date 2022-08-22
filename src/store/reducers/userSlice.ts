@@ -1,6 +1,6 @@
 import { createAsyncThunk, createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { signInWithPopup, } from "firebase/auth";
-import { auth, provaiderFacebook, provider } from "../../firebase";
+import { auth, provider } from "../../firebase";
 import { IUser } from "../../models/IUser";
 
 interface UserState {
@@ -21,14 +21,6 @@ export const signInWithGoole = createAsyncThunk(
         await signInWithPopup(auth, provider)
     }
 )
-
-export const signInWithFacebook = createAsyncThunk(
-    'users/signInWithFacebook',
-    async () => {
-        await signInWithPopup(auth, provaiderFacebook)
-    }
-)
-
 
 export const userSlice = createSlice({
     name: "user",
